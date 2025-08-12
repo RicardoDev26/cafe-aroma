@@ -9,7 +9,7 @@ export default function SectionInfoAdditional(){
                 </div>
                 <div className="flex items-start space-x-3">
                     <span className="text-primary">🚌</span>
-                    <p>Transporte público: Líneas 15, 23 y 47 - Parada "Centro"</p>
+                    <p>Transporte público: Líneas 15, 23 y 47 - Parada &quot;Centro&quot;</p>
                 </div>
                 <div className="flex items-start space-x-3">
                     <span className="text-primary">🚶</span>

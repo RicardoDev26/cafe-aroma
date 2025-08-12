@@ -36,13 +36,10 @@ export default function Contact() {
           </div>
 
           <div className="space-y-8">
-            {/* InforContact */}
             <SectionInfoContact />
 
-            {/* Schedules */}
             <SectionSchedules />
 
-            {/* InfoAdditional */}
             <SectionInfoAdditional />
 
           </div>

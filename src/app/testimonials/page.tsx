@@ -37,7 +37,7 @@ export default function TestimonionPage() {
                   ?
                 </div>
               )}
-              <p className="mb-6 text-gray-700 italic text-lg">"{comment}"</p>
+              <p className="mb-6 text-black italic text-lg">"{comment}"</p>
               <p className="font-semibold text-xl text-gray-900">{name}</p>
               {position && (
                 <p className="mt-1 text-sm text-primary font-medium">{position}</p>

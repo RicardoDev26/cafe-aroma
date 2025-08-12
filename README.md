@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Café Aroma
 
-## Getting Started
+## Descripción
 
-First, run the development server:
+Café Aroma es una interfaz web responsiva para una cafetería, replicando fielmente el diseño provisto en Figma.  
+La página muestra productos y promociones simulados con datos mock, adaptándose perfectamente a dispositivos desktop y mobile.
+
+---
+
+## Tecnologías usadas
+
+- React.js con Next.js
+- Tailwind CSS para estilos y diseño responsivo
+- Docker (archivo Dockerfile incluido para facilitar la ejecución)
+- Datos mock definidos en variables JavaScript para simular productos y promociones
+
+---
+
+## Cómo ejecutar el proyecto
+
+### Requisitos previos
+
+- Node.js (v18 o superior) y npm (si quieres correr local sin Docker)  
+- Docker (opcional, para ejecutar con contenedores)  
+
+### Ejecutar localmente sin Docker
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+La aplicación estará disponible en http://localhost:3000.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Ejecutar localmente con docker
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+ 1-.Construir la imagen
+```bash
+docker build -t cafe-aroma .
+```
+ 2-. Correr el contenedor
+ ```bash
+docker run -p 3000:3000 cafe-aroma
+```
