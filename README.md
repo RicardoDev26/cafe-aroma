@@ -41,3 +41,7 @@ docker build -t cafe-aroma .
  ```bash
 docker run -p 3000:3000 cafe-aroma
 ```
+
+Link del figma: https://www.figma.com/design/BztAI0aCT62uNJYl36HPSD/Cafe-Aroma?m=auto&t=afUAv86GABDvljCF-6
+    Agregue un nuevo diseno con la seccion de Testimonios donde usuarios podra ver
+    los testimonions de clientes y tu como cliente puedes agregar un nuevo testimonio
